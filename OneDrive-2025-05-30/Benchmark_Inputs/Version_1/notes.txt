@@ -1,0 +1,42 @@
+Number of steps (${nsteps}) can be adjusted as needed to achieve ~1 minute runtime.
+${outputlogname} defines the name of the detailed output log file
+
+Single core / single rank tests, basic:
+
+RF, host-only, 1 rank:
+gmx mdrun -s ${name}-rf.tpr  -ntmpi 1 -ntomp 1 -pin on -nb cpu          -bonded cpu -update cpu -nsteps ${nsteps} -nobackup -noconfout            -resethway -g ${outputlogname}
+
+PME, host-only, 1 rank:
+gmx mdrun -s ${name}-pme.tpr -ntmpi 1 -ntomp 1 -pin on -nb cpu -pme cpu -bonded cpu -update cpu -nsteps ${nsteps} -nobackup -noconfout -notunepme -resethway -g ${outputlogname}
+
+RF, partially GPU-resident, 1 rank:
+gmx mdrun -s ${name}-rf.tpr  -ntmpi 1 -ntomp 1 -pin on -nb gpu          -bonded cpu -update gpu -nsteps ${nsteps} -nobackup -noconfout            -resethway -g ${outputlogname}
+
+PME, partially GPU-resident, 1 rank:
+gmx mdrun -s ${name}-pme.tpr -ntmpi 1 -ntomp 1 -pin on -nb gpu -pme gpu -bonded cpu -update gpu -nsteps ${nsteps} -nobackup -noconfout -notunepme -resethway -g ${outputlogname}
+
+RF, fully GPU-resident, 1 rank:
+gmx mdrun -s ${name}-rf.tpr  -ntmpi 1 -ntomp 1 -pin on -nb gpu          -bonded gpu -update gpu -nsteps ${nsteps} -nobackup -noconfout            -resethway -g ${outputlogname}
+
+PME, fully GPU-resident, 1 rank:
+gmx mdrun -s ${name}-pme.tpr -ntmpi 1 -ntomp 1 -pin on -nb gpu -pme gpu -bonded gpu -update gpu -nsteps ${nsteps} -nobackup -noconfout -notunepme -resethway -g ${outputlogname}
+
+Multiple ranks; setting GMX_FORCE_GPU_AWARE_MPI=1 is required unless extra workarounds are made to improve the detection of device-aware MPI:
+
+RF, host-only, 2+ ranks:
+mpirun -np ${N} gmx_mpi mdrun -s ${name}-rf.tpr          -ntomp 1 -pin on -nb cpu          -bonded cpu -update cpu -nsteps ${nsteps} -nobackup -noconfout            -resethway -g ${outputlogname}
+
+PME, host-only, 2+ ranks:
+mpirun -np ${N} gmx_mpi mdrun -s ${name}-pme.tpr -npme 1 -ntomp 1 -pin on -nb cpu -pme cpu -bonded cpu -update cpu -nsteps ${nsteps} -nobackup -noconfout -notunepme -resethway -g ${outputlogname}
+
+RF, partially GPU-resident, 2+ ranks:
+mpirun -np ${N} gmx_mpi mdrun -s ${name}-rf.tpr          -ntomp 1 -pin on -nb gpu          -bonded cpu -update gpu -nsteps ${nsteps} -nobackup -noconfout            -resethway -g ${outputlogname}
+
+PME, partially GPU-resident, 2+ ranks:
+mpirun -np ${N} gmx_mpi mdrun -s ${name}-pme.tpr -npme 1 -ntomp 1 -pin on -nb gpu -pme gpu -bonded cpu -update gpu -nsteps ${nsteps} -nobackup -noconfout -notunepme -resethway -g ${outputlogname}
+
+RF, fully GPU-resident, 2+ ranks:
+mpirun -np ${N} gmx_mpi mdrun -s ${name}-rf.tpr          -ntomp 1 -pin on -nb gpu          -bonded gpu -update gpu -nsteps ${nsteps} -nobackup -noconfout            -resethway -g ${outputlogname}
+
+PME, fully GPU-resident, 2+ ranks:
+mpirun -np ${N} gmx_mpi mdrun -s ${name}-pme.tpr -npme 1 -ntomp 1 -pin on -nb gpu -pme gpu -bonded gpu -update gpu -nsteps ${nsteps} -nobackup -noconfout -notunepme -resethway -g ${outputlogname}
