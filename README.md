@@ -1,2 +1,2 @@
-# gromacs_runner
-Setup for Gromacs mdrun
+# GROMACS-samples
+Sample test systems that can be used for benchmarking
