@@ -1,10 +1,27 @@
-GMX=/home/tapio/vault/repositories/gromacs-wts/PoCL-ACpp/build_acpp-8/install/bin/gmx
-GMX_MPI=/home/tapio/vault/repositories/gromacs-wts/PoCL-ACpp/acpp-mpi/install/bin/gmx_mpi
-ACPP_PATH=/filedump/tapio/repositories/AdaptiveCpp/build_rpathed/install/bin
+#!/bin/bash
 
-BM_DIR=/home/tapio/vault/repositories/GROMACS-Samples/OneDrive-2025-05-30/Benchmark_Inputs/Version_1
-#POCL_ICD_PATH=/home/tapio/vault/repositories/pocl-unpublished-wts/loopvec-next/build-20-Release/install/etc/OpenCL/vendors
-POCL_ICD_PATH=/home/tapio/vault/repositories/pocl-unpublished-wts/loopvec-next/build-LLVM22-R/install/etc/OpenCL/vendors
+HOST_NAME=$(uname -n)
+
+if [ "${HOST_NAME}" = "rtx01" ]; then
+
+    GMX=/home/tapio/vault/repositories/gromacs-wts/PoCL-ACpp/build_acpp-8/install/bin/gmx
+    GMX_MPI=/home/tapio/vault/repositories/gromacs-wts/PoCL-ACpp/acpp-mpi/install/bin/gmx_mpi
+    ACPP_PATH=/filedump/tapio/repositories/AdaptiveCpp/build_rpathed/install/bin
+    BM_DIR=/home/tapio/vault/repositories/GROMACS-Samples/OneDrive-2025-05-30/Benchmark_Inputs/Version_1
+    #POCL_ICD_PATH=/home/tapio/vault/repositories/pocl-unpublished-wts/loopvec-next/build-20-Release/install/etc/OpenCL/vendors
+    POCL_ICD_PATH=/home/tapio/vault/repositories/pocl-unpublished-wts/loopvec-next/build-LLVM22-R/install/etc/OpenCL/vendors
+
+elif [ "${HOST_NAME}" = "lupu" ]; then
+
+    GMX=/home/tapio/repositories/GROMACS-wts/PoCL-ACpp/build_acpp/install/bin/gmx
+    GMX_MPI=/home/tapio/repositories/GROMACS-wts/PoCL-ACpp/acpp_MPI/install/bin/gmx_mpi
+    ACPP_PATH=/home/tapio/repositories/AdaptiveCpp-wts/disable-optimizations/build_20_sysLLVM/install/bin
+    BM_DIR=/home/tapio/repositories/GROMACS-Samples/OneDrive-2025-05-30/Benchmark_Inputs/Version_1
+    POCL_ICD_PATH=/home/tapio/repositories/pocl-unpublished-wts/loopvec-next/build-22/install/etc/OpenCL/vendors
+fi
+
+
+
 
 export OCL_ICD_VENDORS=$POCL_ICD_PATH
 export PATH=${ACPP_PATH}:$PATH
