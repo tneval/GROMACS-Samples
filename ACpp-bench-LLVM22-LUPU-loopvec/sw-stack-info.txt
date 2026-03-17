@@ -1,0 +1,587 @@
+Number of platforms                               1
+  Platform Name                                   Portable Computing Language
+  Platform Vendor                                 The pocl project
+  Platform Version                                OpenCL 3.0 PoCL 7.2-pre loopvec-next-0-g9fb05978f  Linux, Debug+Asserts, RELOC, SPIR-V, LLVM 22.1.0, SLEEF, POCL_DEBUG
+  Platform Profile                                FULL_PROFILE
+  Platform Extensions                             cl_khr_icd cl_khr_priority_hints cl_khr_throttle_hints cl_khr_create_command_queue cl_pocl_content_size cl_ext_buffer_device_address
+  Platform Extensions with Version                cl_khr_icd                                                       0x800000 (2.0.0)
+                                                  cl_khr_priority_hints                                            0x400000 (1.0.0)
+                                                  cl_khr_throttle_hints                                            0x400000 (1.0.0)
+                                                  cl_khr_create_command_queue                                      0x400000 (1.0.0)
+                                                  cl_pocl_content_size                                             0x400000 (1.0.0)
+                                                  cl_ext_buffer_device_address                                       0x9001 (0.9.1)
+  Platform Numeric Version                        0xc00000 (3.0.0)
+  Platform Extensions function suffix             POCL
+  Platform Host timer resolution                  1ns
+
+  Platform Name                                   Portable Computing Language
+Number of devices                                 1
+  Device Name                                     cpu-znver3-AMD EPYC 7643 48-Core Processor
+  Device Vendor                                   AuthenticAMD
+  Device Vendor ID                                0x10006
+  Device Version                                  OpenCL 3.0 PoCL HSTR: cpu-x86_64-unknown-linux-gnu-znver3
+  Device Numeric Version                          0xc00000 (3.0.0)
+  Driver Version                                  7.2-pre loopvec-next-0-g9fb05978f
+  Device OpenCL C Version                         OpenCL C 1.2 PoCL
+  Device OpenCL C all versions                    OpenCL C                                                         0x400000 (1.0.0)
+                                                  OpenCL C                                                         0x401000 (1.1.0)
+                                                  OpenCL C                                                         0x402000 (1.2.0)
+                                                  OpenCL C                                                         0xc00000 (3.0.0)
+  Device OpenCL C features                        __opencl_c_3d_image_writes                                       0xc00000 (3.0.0)
+                                                  __opencl_c_images                                                0xc00000 (3.0.0)
+                                                  __opencl_c_atomic_order_acq_rel                                  0xc00000 (3.0.0)
+                                                  __opencl_c_atomic_order_seq_cst                                  0xc00000 (3.0.0)
+                                                  __opencl_c_subgroups                                             0xc00000 (3.0.0)
+                                                  __opencl_c_atomic_scope_device                                   0xc00000 (3.0.0)
+                                                  __opencl_c_atomic_scope_all_devices                              0xc00000 (3.0.0)
+                                                  __opencl_c_generic_address_space                                 0xc00000 (3.0.0)
+                                                  __opencl_c_work_group_collective_functions                       0xc00000 (3.0.0)
+                                                  __opencl_c_read_write_images                                     0xc00000 (3.0.0)
+                                                  __opencl_c_program_scope_global_variables                        0xc00000 (3.0.0)
+                                                  __opencl_c_subgroups                                             0xc00000 (3.0.0)
+                                                  __opencl_c_fp16                                                  0xc00000 (3.0.0)
+                                                  __opencl_c_fp64                                                  0xc00000 (3.0.0)
+                                                  __opencl_c_ext_fp32_global_atomic_add                            0xc00000 (3.0.0)
+                                                  __opencl_c_ext_fp32_local_atomic_add                             0xc00000 (3.0.0)
+                                                  __opencl_c_ext_fp32_global_atomic_min_max                        0xc00000 (3.0.0)
+                                                  __opencl_c_ext_fp32_local_atomic_min_max                         0xc00000 (3.0.0)
+                                                  __opencl_c_ext_fp64_global_atomic_add                            0xc00000 (3.0.0)
+                                                  __opencl_c_ext_fp64_local_atomic_add                             0xc00000 (3.0.0)
+                                                  __opencl_c_ext_fp64_global_atomic_min_max                        0xc00000 (3.0.0)
+                                                  __opencl_c_ext_fp64_local_atomic_min_max                         0xc00000 (3.0.0)
+                                                  __opencl_c_int64                                                 0xc00000 (3.0.0)
+                                                  __opencl_c_ext_fp32_global_atomic_add                            0xc00000 (3.0.0)
+                                                  __opencl_c_ext_fp64_global_atomic_add                            0xc00000 (3.0.0)
+                                                  __opencl_c_ext_fp32_global_atomic_min_max                        0xc00000 (3.0.0)
+                                                  __opencl_c_ext_fp64_global_atomic_min_max                        0xc00000 (3.0.0)
+                                                  __opencl_c_ext_fp32_local_atomic_min_max                         0xc00000 (3.0.0)
+                                                  __opencl_c_ext_fp64_local_atomic_min_max                         0xc00000 (3.0.0)
+                                                  __opencl_c_ext_fp32_local_atomic_add                             0xc00000 (3.0.0)
+                                                  __opencl_c_ext_fp64_local_atomic_add                             0xc00000 (3.0.0)
+  Latest conformance test passed                  v2024-08-08-00
+  Device Type                                     CPU
+  Device Profile                                  FULL_PROFILE
+  Device Available                                Yes
+  Compiler Available                              Yes
+  Linker Available                                Yes
+  Max compute units                               96
+  Max clock frequency                             3642MHz
+  Device Partition                                (core)
+    Max number of sub-devices                     96
+    Supported partition types                     equally, by counts
+    Supported affinity domains                    (n/a)
+  Max work item dimensions                        3
+  Max work item sizes                             4096x4096x4096
+  Max work group size                             4096
+  Preferred work group size multiple (device)     8
+  Preferred work group size multiple (kernel)     8
+  Max sub-groups per work group                   128
+  Sub-group sizes (Intel)                         2, 4, 8, 16, 32, 64, 128, 256
+  Preferred / native vector sizes                 
+    char                                                16 / 16      
+    short                                               16 / 16      
+    int                                                  8 / 8       
+    long                                                 4 / 4       
+    half                                                16 / 16       (cl_khr_fp16)
+    float                                                8 / 8       
+    double                                               4 / 4        (cl_khr_fp64)
+  Half-precision Floating-point support           (cl_khr_fp16)
+    Denormals                                     No
+    Infinity and NANs                             Yes
+    Round to nearest                              Yes
+    Round to zero                                 No
+    Round to infinity                             No
+    IEEE754-2008 fused multiply-add               No
+    Support is emulated in software               No
+  Single-precision Floating-point support         (core)
+    Denormals                                     Yes
+    Infinity and NANs                             Yes
+    Round to nearest                              Yes
+    Round to zero                                 Yes
+    Round to infinity                             Yes
+    IEEE754-2008 fused multiply-add               Yes
+    Support is emulated in software               No
+    Correctly-rounded divide and sqrt operations  Yes
+  Double-precision Floating-point support         (cl_khr_fp64)
+    Denormals                                     Yes
+    Infinity and NANs                             Yes
+    Round to nearest                              Yes
+    Round to zero                                 Yes
+    Round to infinity                             Yes
+    IEEE754-2008 fused multiply-add               Yes
+    Support is emulated in software               No
+  Address bits                                    64, Little-Endian
+  Global memory size                              529876262912 (493.5GiB)
+  Error Correction support                        No
+  Max memory allocation                           529876262912 (493.5GiB)
+  Unified memory for Host and Device              Yes
+  Shared Virtual Memory (SVM) capabilities        (core)
+    Coarse-grained buffer sharing                 Yes
+    Fine-grained buffer sharing                   Yes
+    Fine-grained system sharing                   Yes
+    Atomics                                       Yes
+  Unified Shared Memory (USM)                     (cl_intel_unified_shared_memory)
+  Host USM capabilities (Intel)                   USM access, USM atomic access
+  Device USM capabilities (Intel)                 USM access, USM atomic access
+  Single-Device USM caps (Intel)                  USM access, USM atomic access
+  Cross-Device USM caps (Intel)                   (n/a)
+  Shared System USM caps (Intel)                  (n/a)
+  Minimum alignment for any data type             128 bytes
+  Alignment of base address                       1024 bits (128 bytes)
+  Preferred alignment for atomics                 
+    SVM                                           64 bytes
+    Global                                        64 bytes
+    Local                                         64 bytes
+  Atomic memory capabilities                      relaxed, acquire/release, sequentially-consistent, work-group scope, device scope, all-devices scope
+  Atomic fence capabilities                       relaxed, acquire/release, sequentially-consistent, work-item scope, work-group scope, device scope
+  Half-precision Floating-point atomic capabilities  
+    Global Load/Store                             No
+    Global Add                                    No
+    Global Min/Max                                No
+    Global Load/Store                             No
+    Global Add                                    No
+    Global Min/Max                                No
+  Single-precision Floating-point atomic capabilities  
+    Global Load/Store                             No
+    Global Add                                    Yes
+    Global Min/Max                                Yes
+    Global Load/Store                             No
+    Global Add                                    Yes
+    Global Min/Max                                Yes
+  Double-precision Floating-point atomic capabilities  
+    Global Load/Store                             No
+    Global Add                                    Yes
+    Global Min/Max                                Yes
+    Global Load/Store                             No
+    Global Add                                    Yes
+    Global Min/Max                                Yes
+  Max size for global variable                    64000 (62.5KiB)
+  Preferred total size of global vars             524288 (512KiB)
+  Global Memory cache type                        Read/Write
+  Global Memory cache size                        33554432 (32MiB)
+  Global Memory cache line size                   64 bytes
+  Image support                                   Yes
+    Max number of samplers per kernel             16
+    Max size for 1D images from buffer            33117266432 pixels
+    Max 1D or 2D image array size                 2048 images
+    Base address alignment for 2D image buffers   0 bytes
+    Pitch alignment for 2D image buffers          0 pixels
+    Max 2D image size                             131072x131072 pixels
+    Max 3D image size                             2048x2048x2048 pixels
+    Max number of read image args                 128
+    Max number of write image args                128
+    Max number of read/write image args           128
+  Pipe support                                    No
+  Max number of pipe args                         0
+  Max active pipe reservations                    0
+  Max pipe packet size                            0
+  Local memory type                               Global
+  Local memory size                               524288 (512KiB)
+  Max number of constant args                     8
+  Max constant buffer size                        524288 (512KiB)
+  Generic address space support                   Yes
+  Max size of kernel argument                     1024
+  Queue properties (on host)                      
+    Out-of-order execution                        Yes
+    Profiling                                     Yes
+  Device enqueue capabilities                     (n/a)
+  Queue properties (on device)                    
+    Out-of-order execution                        No
+    Profiling                                     No
+    Preferred size                                0
+    Max size                                      0
+  Max queues on device                            0
+  Max events on device                            0
+  Command buffer capabilities                     kernel printf, simultaneous use, 0x10
+    Required queue properties for command buffer  
+    Out-of-order execution                        No
+    Profiling                                     No
+  Prefer user sync for interop                    Yes
+  Profiling timer resolution                      1ns
+  Execution capabilities                          
+    Run OpenCL kernels                            Yes
+    Run native kernels                            Yes
+    Non-uniform work-groups                       No
+    Work-group collective functions               Yes
+    Sub-group independent forward progress        Yes
+    IL version                                    SPIR-V_1.5 SPIR-V_1.4 SPIR-V_1.3 SPIR-V_1.2 SPIR-V_1.1 SPIR-V_1.0
+    ILs with version                              SPIR-V                                                           0x405000 (1.5.0)
+                                                  SPIR-V                                                           0x404000 (1.4.0)
+                                                  SPIR-V                                                           0x403000 (1.3.0)
+                                                  SPIR-V                                                           0x402000 (1.2.0)
+                                                  SPIR-V                                                           0x401000 (1.1.0)
+                                                  SPIR-V                                                           0x400000 (1.0.0)
+  printf() buffer size                            16777216 (16MiB)
+  Built-in kernels                                pocl.add.i8;org.khronos.openvx.scale_image.nn.u8;org.khronos.openvx.scale_image.bl.u8;org.khronos.openvx.tensor_convert_depth.wrap.u8.f32;img_color_convert_exp;onnx_inference_exp;
+  Built-in kernels with version                   pocl.add.i8                                                      0x402000 (1.2.0)
+                                                  org.khronos.openvx.scale_image.nn.u8                             0x402000 (1.2.0)
+                                                  org.khronos.openvx.scale_image.bl.u8                             0x402000 (1.2.0)
+                                                  org.khronos.openvx.tensor_convert_depth.wrap.u8.f32              0x402000 (1.2.0)
+                                                  img_color_convert_exp                                            0x402000 (1.2.0)
+                                                  onnx_inference_exp                                               0x402000 (1.2.0)
+  Device Extensions                               cl_khr_byte_addressable_store cl_khr_global_int32_base_atomics cl_khr_global_int32_extended_atomics cl_khr_local_int32_base_atomics cl_khr_local_int32_extended_atomics cl_khr_3d_image_writes cl_ext_float_atomics cl_khr_subgroups cl_khr_subgroup_rotate cl_khr_subgroup_shuffle cl_khr_subgroup_shuffle_relative cl_khr_subgroup_extended_types cl_intel_unified_shared_memory cl_ext_buffer_device_address       cl_pocl_svm_rect cl_pocl_command_buffer_svm       cl_khr_command_buffer cl_khr_command_buffer_multi_device cl_khr_command_buffer_mutable_dispatch       cl_pocl_command_buffer_host_buffer       cl_exp_defined_builtin_kernels cl_khr_subgroup_ballot cl_intel_subgroups cl_intel_subgroups_short cl_intel_subgroups_char cl_intel_required_subgroup_size cl_exp_tensor cl_khr_il_program cl_khr_spirv_queries cl_khr_fp16 cl_khr_fp64 cl_khr_int64_base_atomics cl_khr_int64_extended_atomics
+  Device Extensions with Version                  cl_khr_byte_addressable_store                                    0x400000 (1.0.0)
+                                                  cl_khr_global_int32_base_atomics                                 0x400000 (1.0.0)
+                                                  cl_khr_global_int32_extended_atomics                             0x400000 (1.0.0)
+                                                  cl_khr_local_int32_base_atomics                                  0x400000 (1.0.0)
+                                                  cl_khr_local_int32_extended_atomics                              0x400000 (1.0.0)
+                                                  cl_khr_3d_image_writes                                           0x400000 (1.0.0)
+                                                  cl_ext_float_atomics                                             0x400000 (1.0.0)
+                                                  cl_khr_subgroups                                                 0x400000 (1.0.0)
+                                                  cl_khr_subgroup_rotate                                           0x400000 (1.0.0)
+                                                  cl_khr_subgroup_shuffle                                          0x400000 (1.0.0)
+                                                  cl_khr_subgroup_shuffle_relative                                 0x400000 (1.0.0)
+                                                  cl_khr_subgroup_extended_types                                   0x400000 (1.0.0)
+                                                  cl_intel_unified_shared_memory                                   0x400000 (1.0.0)
+                                                  cl_ext_buffer_device_address                                     0x400002 (1.0.2)
+                                                  cl_pocl_svm_rect                                                   0x9000 (0.9.0)
+                                                  cl_pocl_command_buffer_svm                                         0x9000 (0.9.0)
+                                                  cl_khr_command_buffer                                              0x9006 (0.9.6)
+                                                  cl_khr_command_buffer_multi_device                                 0x9001 (0.9.1)
+                                                  cl_khr_command_buffer_mutable_dispatch                             0x9003 (0.9.3)
+                                                  cl_pocl_command_buffer_host_buffer                                 0x9000 (0.9.0)
+                                                  cl_exp_defined_builtin_kernels                                     0x1000 (0.1.0)
+                                                  cl_khr_subgroup_ballot                                           0x400000 (1.0.0)
+                                                  cl_intel_subgroups                                               0x400000 (1.0.0)
+                                                  cl_intel_subgroups_short                                         0x400000 (1.0.0)
+                                                  cl_intel_subgroups_char                                          0x400000 (1.0.0)
+                                                  cl_intel_required_subgroup_size                                  0x400000 (1.0.0)
+                                                  cl_exp_tensor                                                      0x1000 (0.1.0)
+                                                  cl_khr_il_program                                                0x801000 (2.1.0)
+                                                  cl_khr_spirv_queries                                             0x400000 (1.0.0)
+                                                  cl_khr_fp16                                                      0x400000 (1.0.0)
+                                                  cl_khr_fp64                                                      0x400000 (1.0.0)
+                                                  cl_khr_int64_base_atomics                                        0x400000 (1.0.0)
+                                                  cl_khr_int64_extended_atomics                                    0x400000 (1.0.0)
+
+NULL platform behavior
+  clGetPlatformInfo(NULL, CL_PLATFORM_NAME, ...)  No platform
+  clGetDeviceIDs(NULL, CL_DEVICE_TYPE_ALL, ...)   No platform
+  clCreateContext(NULL, ...) [default]            No platform
+  clCreateContext(NULL, ...) [other]              Success [POCL]
+  clCreateContextFromType(NULL, CL_DEVICE_TYPE_DEFAULT)  Success (1)
+    Platform Name                                 Portable Computing Language
+    Device Name                                   cpu-znver3-AMD EPYC 7643 48-Core Processor
+  clCreateContextFromType(NULL, CL_DEVICE_TYPE_CPU)  Success (1)
+    Platform Name                                 Portable Computing Language
+    Device Name                                   cpu-znver3-AMD EPYC 7643 48-Core Processor
+  clCreateContextFromType(NULL, CL_DEVICE_TYPE_GPU)  No devices found in platform
+  clCreateContextFromType(NULL, CL_DEVICE_TYPE_ACCELERATOR)  No devices found in platform
+  clCreateContextFromType(NULL, CL_DEVICE_TYPE_CUSTOM)  No devices found in platform
+  clCreateContextFromType(NULL, CL_DEVICE_TYPE_ALL)  Success (1)
+    Platform Name                                 Portable Computing Language
+    Device Name                                   cpu-znver3-AMD EPYC 7643 48-Core Processor
+
+ICD loader properties
+  ICD loader Name                                 Khronos OpenCL ICD Loader
+  ICD loader Vendor                               Khronos Group
+  ICD loader Version                              3.0.7
+  ICD loader Profile                              OpenCL 3.0
+=================Backend information===================
+Loaded backend 0: OpenMP
+  Found device: AdaptiveCpp OpenMP host device
+Loaded backend 1: OpenCL
+  Found device: cpu-znver3-AMD EPYC 7643 48-Core Processor
+
+=================Device information===================
+***************** Devices for backend OpenMP *****************
+Device 0:
+ General device information:
+  Name: AdaptiveCpp OpenMP host device
+  Backend: OpenMP
+  Platform: Backend 4 / Platform 0
+  Vendor: the AdaptiveCpp project
+  Arch: <native-cpu>
+  Driver version: 1.2
+  Is CPU: 1
+  Is GPU: 0
+ Default executor information:
+  Is in-order queue: 0
+  Is out-of-order queue: 1
+  Is task graph: 0
+ Device support queries:
+  images: 0
+  error_correction: 0
+  host_unified_memory: 1
+  little_endian: 1
+  global_mem_cache: 1
+  global_mem_cache_read_only: 0
+  global_mem_cache_read_write: 1
+  emulated_local_memory: 1
+  sub_group_independent_forward_progress: 0
+  usm_device_allocations: 1
+  usm_host_allocations: 1
+  usm_atomic_host_allocations: 1
+  usm_shared_allocations: 1
+  usm_atomic_shared_allocations: 1
+  usm_system_allocations: 1
+  execution_timestamps: 1
+  sscp_kernels: 1
+ Device properties:
+  max_compute_units: 96
+  max_work_group_range0: 18446744073709551615
+  max_work_group_range1: 18446744073709551615
+  max_work_group_range2: 18446744073709551615
+  max_work_group_range_size: 18446744073709551615
+  max_global_size0: 18446744073709551615
+  max_global_size1: 18446744073709551615
+  max_global_size2: 18446744073709551615
+  max_group_size: 1024
+  max_num_sub_groups: 18446744073709551615
+  preferred_vector_width_char: 4
+  preferred_vector_width_double: 1
+  preferred_vector_width_float: 1
+  preferred_vector_width_half: 2
+  preferred_vector_width_int: 1
+  preferred_vector_width_long: 1
+  preferred_vector_width_short: 2
+  native_vector_width_char: 4
+  native_vector_width_double: 1
+  native_vector_width_float: 1
+  native_vector_width_half: 2
+  native_vector_width_int: 1
+  native_vector_width_long: 1
+  native_vector_width_short: 2
+  max_clock_speed: 0
+  max_malloc_size: 18446744073709551615
+  address_bits: 64
+  max_read_image_args: 0
+  max_write_image_args: 0
+  image2d_max_width: 0
+  image2d_max_height: 0
+  image3d_max_width: 0
+  image3d_max_height: 0
+  image3d_max_depth: 0
+  image_max_buffer_size: 0
+  image_max_array_size: 0
+  max_samplers: 0
+  max_parameter_size: 18446744073709551615
+  mem_base_addr_align: 8
+  global_mem_cache_line_size: 64
+  global_mem_cache_size: 1
+  global_mem_size: 534171230208
+  max_constant_buffer_size: 18446744073709551615
+  max_constant_args: 18446744073709551615
+  local_mem_size: 18446744073709551615
+  printf_buffer_size: 18446744073709551615
+  partition_max_sub_devices: 0
+  vendor_id: 18446744073709551615
+  sub_group_sizes: 1 
+
+
+***************** Devices for backend OpenCL *****************
+Device 0:
+ General device information:
+  Name: cpu-znver3-AMD EPYC 7643 48-Core Processor
+  Backend: OpenCL
+  Platform: Backend 3 / Platform 0
+  Vendor: cpu-znver3-AMD EPYC 7643 48-Core Processor
+  Arch: OpenCL OpenCL C 1.2 PoCL
+  Driver version: 7.2-pre loopvec-next-0-g9fb05978f
+  Is CPU: 1
+  Is GPU: 0
+ Default executor information:
+  Is in-order queue: 0
+  Is out-of-order queue: 1
+  Is task graph: 0
+ Device support queries:
+  images: 0
+  error_correction: 0
+  host_unified_memory: 0
+  little_endian: 1
+  global_mem_cache: 1
+  global_mem_cache_read_only: 1
+  global_mem_cache_read_write: 0
+  emulated_local_memory: 1
+  sub_group_independent_forward_progress: 1
+  usm_device_allocations: 1
+  usm_host_allocations: 1
+  usm_atomic_host_allocations: 1
+  usm_shared_allocations: 1
+  usm_atomic_shared_allocations: 1
+  usm_system_allocations: 0
+  execution_timestamps: 0
+  sscp_kernels: 1
+ Device properties:
+  max_compute_units: 96
+  max_work_group_range0: 2147483647
+  max_work_group_range1: 2147483647
+  max_work_group_range2: 2147483647
+  max_work_group_range_size: 18446744073709551615
+  max_global_size0: 4096
+  max_global_size1: 4096
+  max_global_size2: 4096
+  max_group_size: 4096
+  max_num_sub_groups: 128
+  preferred_vector_width_char: 16
+  preferred_vector_width_double: 4
+  preferred_vector_width_float: 8
+  preferred_vector_width_half: 16
+  preferred_vector_width_int: 8
+  preferred_vector_width_long: 4
+  preferred_vector_width_short: 16
+  native_vector_width_char: 16
+  native_vector_width_double: 4
+  native_vector_width_float: 8
+  native_vector_width_half: 16
+  native_vector_width_int: 8
+  native_vector_width_long: 4
+  native_vector_width_short: 16
+  max_clock_speed: 3642
+  max_malloc_size: 529876262912
+  address_bits: 64
+  max_read_image_args: 0
+  max_write_image_args: 0
+  image2d_max_width: 0
+  image2d_max_height: 0
+  image3d_max_width: 0
+  image3d_max_height: 0
+  image3d_max_depth: 0
+  image_max_buffer_size: 0
+  image_max_array_size: 0
+  max_samplers: 0
+  max_parameter_size: 1024
+  mem_base_addr_align: 1024
+  global_mem_cache_line_size: 64
+  global_mem_cache_size: 33554432
+  global_mem_size: 529876262912
+  max_constant_buffer_size: 524288
+  max_constant_args: 8
+  local_mem_size: 524288
+  printf_buffer_size: 16777216
+  partition_max_sub_devices: 0
+  vendor_id: 65542
+  sub_group_sizes: 1 2 4 8 16 32 64 128 256 512 1024 2048 
+
+
+         :-) GROMACS - gmx, 2027.0-dev-20260313-96057cfc41-unknown (-:
+
+Executable:   /home/tapio/repositories/GROMACS-wts/PoCL-ACpp/build_acpp/install/bin/gmx
+Data prefix:  /home/tapio/repositories/GROMACS-wts/PoCL-ACpp/build_acpp/install
+Working dir:  /home/tapio/repositories/GROMACS-Samples
+Command line:
+  gmx --version
+
+GROMACS version:     2027.0-dev-20260313-96057cfc41-unknown
+GIT SHA1 hash:       96057cfc4106faf022ac519112c851bb73279efa
+Branched from:       unknown
+Precision:           mixed
+Memory model:        64 bit
+MPI library:         thread_mpi
+MPI version:         built in
+OpenMP support:      disabled
+GPU support:         SYCL (AdaptiveCpp)
+NBNxM GPU setup:     super-cluster 2x2x2 / cluster 8 (cluster-pair splitting on)
+SIMD instructions:   AVX2_256
+CPU FFT library:     fftw-3.3.10-sse2-avx-avx2-avx2_128
+GPU FFT library:     none / unknown
+Multi-GPU FFT:       none
+RDTSCP:              enabled
+TNG support:         enabled
+Hwloc support:       disabled
+Tracing support:     disabled
+Colvars support:     enabled (version 2025-10-13)
+CP2K support:        disabled
+Torch support:       disabled
+Plumed support:      enabled
+C compiler:          /usr/bin/clang-20 Clang 20.1.8
+C compiler flags:    -mavx2 -mfma -Wno-unknown-pragmas -Wall -Wno-unused -Wunused-value -Wunused-parameter -Wpointer-arith -Wshadow-all -Wno-missing-field-initializers -O3 -DNDEBUG
+C++ compiler:        /home/tapio/repositories/AdaptiveCpp-wts/disable-optimizations/build_20_sysLLVM/install/bin/acpp Clang 20.1.8
+C++ compiler flags:  -mavx2 -mfma -Wall -Wextra -Wpointer-arith -Wmissing-prototypes -Wpedantic -Wdeprecated -Wshadow-all -Wno-unused-function -Wno-unknown-pragmas -Wno-reserved-identifier -Wno-missing-field-initializers -Weverything -Wno-c++98-compat -Wno-c++98-compat-pedantic -Wno-source-uses-openmp -Wno-c++17-extensions -Wno-documentation-unknown-command -Wno-covered-switch-default -Wno-switch-enum -Wno-switch-default -Wno-extra-semi-stmt -Wno-weak-vtables -Wno-shadow -Wno-padded -Wno-reserved-id-macro -Wno-double-promotion -Wno-exit-time-destructors -Wno-global-constructors -Wno-documentation -Wno-format-nonliteral -Wno-used-but-marked-unused -Wno-float-equal -Wno-cuda-compat -Wno-conditional-uninitialized -Wno-conversion -Wno-disabled-macro-expansion -Wno-unused-macros -Wno-unsafe-buffer-usage -Wno-cast-function-type-strict -O3 -DNDEBUG
+BLAS library:        Internal
+LAPACK library:      Internal
+SYCL version:        AdaptiveCpp 25.10.0+git.50c4c5e7.20260220.branch.disable-optimizations
+SYCL compiler:       /home/tapio/repositories/AdaptiveCpp-wts/disable-optimizations/build_20_sysLLVM/install/lib/cmake/AdaptiveCpp/syclcc-launcher
+SYCL compiler flags: -Wno-unknown-cuda-version -Wno-unknown-attributes  --acpp-targets="generic" --acpp-clang=/home/tapio/repositories/AdaptiveCpp-wts/disable-optimizations/build_20_sysLLVM/install/bin/acpp
+SYCL GPU flags:      -ffast-math -DHIPSYCL_ALLOW_INSTANT_SUBMISSION=1 -DACPP_ALLOW_INSTANT_SUBMISSION=1 -fgpu-inline-threshold=99999 -Wno-deprecated-declarations
+SYCL targets:        generic
+
+       :-) GROMACS - gmx_mpi, 2027.0-dev-20260313-96057cfc41-unknown (-:
+
+Executable:   /home/tapio/repositories/GROMACS-wts/PoCL-ACpp/acpp_MPI/install/bin/gmx_mpi
+Data prefix:  /home/tapio/repositories/GROMACS-wts/PoCL-ACpp/acpp_MPI/install
+Working dir:  /home/tapio/repositories/GROMACS-Samples
+Command line:
+  gmx_mpi --version
+
+GROMACS version:     2027.0-dev-20260313-96057cfc41-unknown
+GIT SHA1 hash:       96057cfc4106faf022ac519112c851bb73279efa
+Branched from:       unknown
+Precision:           mixed
+Memory model:        64 bit
+MPI library:         MPI
+MPI version:         Open MPI v5.0.8, package: Debian OpenMPI, ident: 5.0.8, repo rev: v5.0.8, May 30, 2025
+OpenMP support:      disabled
+GPU support:         SYCL (AdaptiveCpp)
+NBNxM GPU setup:     super-cluster 2x2x2 / cluster 8 (cluster-pair splitting on)
+SIMD instructions:   AVX2_256
+CPU FFT library:     fftw-3.3.10-sse2-avx-avx2-avx2_128
+GPU FFT library:     none / unknown
+Multi-GPU FFT:       none
+RDTSCP:              enabled
+TNG support:         enabled
+Hwloc support:       disabled
+Tracing support:     disabled
+Colvars support:     enabled (version 2025-10-13)
+CP2K support:        disabled
+Torch support:       disabled
+Plumed support:      enabled
+C compiler:          /usr/bin/clang-20 Clang 20.1.8
+C compiler flags:    -mavx2 -mfma -Wno-unknown-pragmas -Wall -Wno-unused -Wunused-value -Wunused-parameter -Wpointer-arith -Wshadow-all -Wno-missing-field-initializers -O3 -DNDEBUG
+C++ compiler:        /home/tapio/repositories/AdaptiveCpp-wts/disable-optimizations/build_20_sysLLVM/install/bin/acpp Clang 20.1.8
+C++ compiler flags:  -mavx2 -mfma -Wall -Wextra -Wpointer-arith -Wmissing-prototypes -Wpedantic -Wdeprecated -Wshadow-all -Wno-unused-function -Wno-unknown-pragmas -Wno-reserved-identifier -Wno-missing-field-initializers -Weverything -Wno-c++98-compat -Wno-c++98-compat-pedantic -Wno-source-uses-openmp -Wno-c++17-extensions -Wno-documentation-unknown-command -Wno-covered-switch-default -Wno-switch-enum -Wno-switch-default -Wno-extra-semi-stmt -Wno-weak-vtables -Wno-shadow -Wno-padded -Wno-reserved-id-macro -Wno-double-promotion -Wno-exit-time-destructors -Wno-global-constructors -Wno-documentation -Wno-format-nonliteral -Wno-used-but-marked-unused -Wno-float-equal -Wno-cuda-compat -Wno-conditional-uninitialized -Wno-conversion -Wno-disabled-macro-expansion -Wno-unused-macros -Wno-unsafe-buffer-usage -Wno-old-style-cast -Wno-cast-qual -Wno-suggest-override -Wno-suggest-destructor-override -Wno-zero-as-null-pointer-constant -Wno-cast-function-type-strict -O3 -DNDEBUG
+BLAS library:        Internal
+LAPACK library:      Internal
+SYCL version:        AdaptiveCpp 25.10.0+git.50c4c5e7.20260220.branch.disable-optimizations
+SYCL compiler:       /home/tapio/repositories/AdaptiveCpp-wts/disable-optimizations/build_20_sysLLVM/install/lib/cmake/AdaptiveCpp/syclcc-launcher
+SYCL compiler flags: -Wno-unknown-cuda-version -Wno-unknown-attributes  --acpp-targets="generic" --acpp-clang=/home/tapio/repositories/AdaptiveCpp-wts/disable-optimizations/build_20_sysLLVM/install/bin/acpp
+SYCL GPU flags:      -ffast-math -DHIPSYCL_ALLOW_INSTANT_SUBMISSION=1 -DACPP_ALLOW_INSTANT_SUBMISSION=1 -fgpu-inline-threshold=99999 -Wno-deprecated-declarations
+SYCL targets:        generic
+
+Architecture:                            x86_64
+CPU op-mode(s):                          32-bit, 64-bit
+Address sizes:                           43 bits physical, 48 bits virtual
+Byte Order:                              Little Endian
+CPU(s):                                  96
+On-line CPU(s) list:                     0-95
+Vendor ID:                               AuthenticAMD
+Model name:                              AMD EPYC 7643 48-Core Processor
+CPU family:                              25
+Model:                                   1
+Thread(s) per core:                      1
+Core(s) per socket:                      48
+Socket(s):                               2
+Stepping:                                1
+Frequency boost:                         enabled
+CPU(s) scaling MHz:                      42%
+CPU max MHz:                             3642,5000
+CPU min MHz:                             1500,0000
+BogoMIPS:                                4600,39
+Flags:                                   fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl xtopology nonstop_tsc cpuid extd_apicid aperfmperf rapl pni pclmulqdq monitor ssse3 fma cx16 pcid sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_llc mwaitx cpb cat_l3 cdp_l3 hw_pstate ssbd mba ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 invpcid cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local user_shstk clzero irperf xsaveerptr rdpru wbnoinvd amd_ppin brs arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold v_vmsave_vmload vgif v_spec_ctrl umip pku ospke vaes vpclmulqdq rdpid overflow_recov succor smca sev sev_es sev_snp debug_swap
+Virtualization:                          AMD-V
+L1d cache:                               3 MiB (96 instances)
+L1i cache:                               3 MiB (96 instances)
+L2 cache:                                48 MiB (96 instances)
+L3 cache:                                512 MiB (16 instances)
+NUMA node(s):                            2
+NUMA node0 CPU(s):                       0-47
+NUMA node1 CPU(s):                       48-95
+Vulnerability Gather data sampling:      Not affected
+Vulnerability Ghostwrite:                Not affected
+Vulnerability Indirect target selection: Not affected
+Vulnerability Itlb multihit:             Not affected
+Vulnerability L1tf:                      Not affected
+Vulnerability Mds:                       Not affected
+Vulnerability Meltdown:                  Not affected
+Vulnerability Mmio stale data:           Not affected
+Vulnerability Old microcode:             Not affected
+Vulnerability Reg file data sampling:    Not affected
+Vulnerability Retbleed:                  Not affected
+Vulnerability Spec rstack overflow:      Mitigation; Safe RET
+Vulnerability Spec store bypass:         Mitigation; Speculative Store Bypass disabled via prctl
+Vulnerability Spectre v1:                Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+Vulnerability Spectre v2:                Mitigation; Retpolines; IBPB conditional; IBRS_FW; STIBP disabled; RSB filling; PBRSB-eIBRS Not affected; BHI Not affected
+Vulnerability Srbds:                     Not affected
+Vulnerability Tsa:                       Vulnerable: No microcode
+Vulnerability Tsx async abort:           Not affected
+Vulnerability Vmscape:                   Mitigation; IBPB before exit to userspace
