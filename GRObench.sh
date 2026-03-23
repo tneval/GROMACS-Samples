@@ -26,9 +26,9 @@ elif [ "${HOST_NAME}" = "lupu" ]; then
 elif [ "${HOST_NAME}" = "neptune" ]; then
 
     GMX=/home/tapio/milkv-vault/repositories/gromacs-wts/PoCL-ACpp/build_acpp_simd_enable_v2/install/bin/gmx
-    GMX_MPI=
-    ACPP_PATH/home/tapio/milkv-vault/repositories/AdaptiveCpp-wts/disable-optimizations/build-llvm19/install/bin
-    #BM_DIR=
+    GMX_MPI=/home/tapio/milkv-vault/repositories/gromacs-wts/PoCL-ACpp/build-OpenMPI-vec/install/bin/gmx_mpi
+    ACPP_PATH=/home/tapio/milkv-vault/repositories/AdaptiveCpp-wts/disable-optimizations/build-llvm19/install/bin
+    BM_DIR=/home/tapio/milkv-vault/repositories/GROMACS-Samples/OneDrive-2025-05-30/Benchmark_Inputs/Version_1
     POCL_ICD_PATH=/home/tapio/milkv-vault/repositories/pocl-unpublished-wts/loopvec-next/build-19-RELEASE/install/etc/OpenCL/vendors
 
     N_STEPS=(512 256 128 64 32 16 8 4 2 2 2 2 30)
