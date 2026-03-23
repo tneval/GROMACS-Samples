@@ -122,11 +122,10 @@ for index in "${!INPUTS[@]}"; do
                 export GMX_NBNXN_PLAINC_1X1=1
                 $GMX mdrun -s ${INPUTS[index]}-rf.tpr -ntmpi 1 -ntomp 1 -pin on -nb cpu -bonded cpu -update cpu -nsteps ${N_STEPS[$index]} -nobackup -noconfout -resethway -g ${LOGFILE_RF_HOST}-autovec -v
                 unset GMX_NBNXN_PLAINC_1X1
-
-                $GMX mdrun -s ${INPUTS[index]}-rf.tpr -ntmpi 1 -ntomp 1 -pin on -nb cpu -bonded cpu -update cpu -nsteps ${N_STEPS[$index]} -nobackup -noconfout -resethway -g ${LOGFILE_RF_HOST} -v
-            else
-                $GMX mdrun -s ${INPUTS[index]}-rf.tpr -ntmpi 1 -ntomp 1 -pin on -nb cpu -bonded cpu -update cpu -nsteps ${N_STEPS[$index]} -nobackup -noconfout -resethway -g ${LOGFILE_RF_HOST} -v
             fi
+
+            $GMX mdrun -s ${INPUTS[index]}-rf.tpr -ntmpi 1 -ntomp 1 -pin on -nb cpu -bonded cpu -update cpu -nsteps ${N_STEPS[$index]} -nobackup -noconfout -resethway -g ${LOGFILE_RF_HOST} -v
+
 
 
         fi
@@ -146,7 +145,6 @@ for index in "${!INPUTS[@]}"; do
                 export GMX_NBNXN_PLAINC_1X1=1
                 $GMX mdrun -s ${INPUTS[$index]}-pme.tpr -ntmpi 1 -ntomp 1 -pin on -nb cpu -pme cpu -bonded cpu -update cpu -nsteps ${N_STEPS[$index]} -nobackup -noconfout -notunepme -resethway -g ${LOGFILE_PME_HOST}-autovec -v
                 unset GMX_NBNXN_PLAINC_1X1
-
             fi
 
             $GMX mdrun -s ${INPUTS[$index]}-pme.tpr -ntmpi 1 -ntomp 1 -pin on -nb cpu -pme cpu -bonded cpu -update cpu -nsteps ${N_STEPS[$index]} -nobackup -noconfout -notunepme -resethway -g ${LOGFILE_PME_HOST} -v
@@ -234,7 +232,7 @@ for index in "${!INPUTS[@]}"; do
 
                 # Autovectorization friendly kernel
                 export GMX_NBNXN_PLAINC_1X1=1
-                mpirun -np ${N_RANKS} ${GMX_MPI} mdrun -s ${INPUTS[$index]}-pme.tpr -npme 1 -ntomp 1 -pin on -nb cpu -pme cpu -bonded cpu -update cpu -nsteps ${N_STEPS[$index]} -nobackup -noconfout -notunepme -resethway -g ${LOGFILE_PME_HOST_MULTIRANK} -autovec -v
+                mpirun -np ${N_RANKS} ${GMX_MPI} mdrun -s ${INPUTS[$index]}-pme.tpr -npme 1 -ntomp 1 -pin on -nb cpu -pme cpu -bonded cpu -update cpu -nsteps ${N_STEPS[$index]} -nobackup -noconfout -notunepme -resethway -g ${LOGFILE_PME_HOST_MULTIRANK}-autovec -v
                 unset GMX_NBNXN_PLAINC_1X1
             fi
 
